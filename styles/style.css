@@ -10,9 +10,8 @@ Add the Google Fonts you want, remove the ones you don't.
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
 /*
-
 Imported stylesheets. Remove the ones you do not want to use.
 
 ██ ███    ███ ██████   ██████  ██████  ████████      ██████ ███████ ███████ 
@@ -67,9 +66,9 @@ html {
   --hyperlink-color: rgb(9, 132, 255);
   --hyperlink-alternate-color: orangered;
   --hover-color: #111;
-  --body-typeface: "rubik", sans-serif;
-  --heading-typeface: 'rubik', serif;
-  --project-title-typeface: 'rubik', serif;
+  --body-typeface: "rubik", sans-serif; font-weight:300;
+  --heading-typeface: 'rubik', sans-serif; font-weight:600;
+  --project-title-typeface: 'rubik', sans-serif; font-weight:400;
   --heart-color: darkred;
   --off-white: #f8f8ff;
   --isabelline: #f4f0ec;
@@ -120,21 +119,21 @@ img, svg {
 */
 
 h1 {
-  font-size: 2rem;
+  font-size: 1rem;
   font-family: var(--heading-typeface);
   margin-bottom: 1rem;
   color: var(--baby-powder);
 }
 
 .project-title {
-  font-size: 3rem;
-  font-family: rubik;
+  font-size: 1.5rem;
+  font-family: ;
   margin-bottom: 1rem;
   color: black;
 }
 
 .overlay-title {
-  font-size: 2.875rem;
+  font-size: 2rem;
 }
 
 h2 {
@@ -254,7 +253,7 @@ justify-content: space-between;}
 }
 
 .logo {
-  width: 3rem;
+  width: 4rem;
 }
 
 .hero-headline-wrapper {
@@ -694,7 +693,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
 
 @media (min-width: 992px) {
   h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   h2 {
@@ -710,7 +709,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   }
 
   .hero {
-    min-height: 75vh;
+    min-height: 0vh;
   }
 
 
@@ -858,7 +857,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   .hero-headline-wrapper {
     padding: 2rem 4rem;
     width: 70%;
-    background: yellowgreen;
+    background: rgb(255, 255, 255);
   }
 
 }
@@ -873,7 +872,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
   .hero-headline-wrapper {
     width: 70%;
     padding: 2rem 4rem;
-    background: hotpink;
+    background: rgb(255, 255, 255);
   }
 
 }
