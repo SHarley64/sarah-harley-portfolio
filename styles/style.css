@@ -355,9 +355,22 @@ justify-content: space-between;}
   visibility: visible;
   opacity: .8;
 }
+/* Play Page Layout */
 
+.play-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-gap: 1rem;
+  /* Magical, media-query-less responsiveness is achieved using the repeat() function and the auto placement keywords. To achieve wrapping, we can use the auto-fit. If you're using auto-fit, the content will stretch to fill the entire row width.  Specify a minimum width for the columns, using the minmax() function. The 1fr is what tells the browser to distribute the space between the columns so that each column equally gets one fraction of that space.  */
+}
 
-
+.play-page-grid-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  /* Required to contain overlay size */
+}
+*/
 
 /* 
 
@@ -867,7 +880,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
 @media (min-width: 1400px) {
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
   }
   .hero-headline-wrapper {
     width: 70%;
