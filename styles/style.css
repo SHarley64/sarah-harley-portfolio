@@ -867,7 +867,7 @@ a.sub-navigation-link:hover {background: var(--accent-color); color: var(--flora
 @media (min-width: 1400px) {
 
   .grid {
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   }
   .hero-headline-wrapper {
     width: 70%;
